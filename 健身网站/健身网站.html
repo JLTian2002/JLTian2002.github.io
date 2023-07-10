@@ -11,6 +11,14 @@
 
   gtag('config', 'G-QM5ZJ9WMJY');
 </script>
+<script>
+    function trackClick(label) {
+        gtag('event', 'click', {
+            'event_category': 'Navigation',
+            'event_label': label
+        });
+    }
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,12 +54,12 @@
     <header class="navbar-fixed-top">
         <nav>
             <ul>
-                <li><a href="#网站介绍">网站介绍</a></li>
-                <li><a href="#基础知识">基础知识</a></li>
-                <li><a href="#饮食">饮食</a></li>
-                <li><a href="#训练">训练</a></li>
-                <li><a href="#个人数据计算">个人数据计算</a></li>
-                <li><a href="#联系我">联系我</a></li>
+                <li><a href="#网站介绍" onClick="trackClick('网站介绍')">网站介绍</a></li>
+                <li><a href="#基础知识" onClick="trackClick('基础知识')">基础知识</a></li>
+                <li><a href="#饮食" onClick="trackClick('饮食')">饮食</a></li>
+                <li><a href="#训练" onClick="trackClick('训练')">训练</a></li>
+                <li><a href="#个人数据计算" onClick="trackClick('个人数据计算')">个人数据计算</a></li>
+                <li><a href="#联系我" onClick="trackClick('联系我')">联系我</a></li>
             </ul>
         </nav>
     </header>
